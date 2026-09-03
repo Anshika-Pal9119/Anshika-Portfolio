@@ -1,0 +1,318 @@
+/* =========================================
+   CERTIFICATE SECTION
+========================================= */
+
+.certificate-section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 110px 70px 70px;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.certificate-heading {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.certificate-label {
+    margin: 0 0 14px;
+
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 4px;
+
+    color: #d4af37;
+}
+
+.certificate-heading h1 {
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 50px;
+    font-weight: 400;
+
+    color: #f2f2f2;
+}
+
+.certificate-heading h1 span {
+    font-style: italic;
+
+    background: linear-gradient(
+        110deg,
+        #a87908,
+        #d4af37,
+        #f5df8b,
+        #d4af37,
+        #a87908
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.heading-line {
+    width: 48px;
+    height: 1px;
+    margin: 16px auto 0;
+
+    background: #d4af37;
+}
+
+
+/* =========================================
+   STATISTICS
+========================================= */
+
+.certificate-stats {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    margin-bottom: 38px;
+}
+
+.certificate-stat {
+    min-width: 165px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    padding: 0 16px;
+
+    border: 1px solid #202c42;
+    border-radius: 6px;
+
+    background: rgba(10, 17, 31, 0.65);
+}
+
+.certificate-stat strong {
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    color: #e7e7e7;
+}
+
+.certificate-stat p {
+    margin: 0;
+
+    font-family: "Courier New", monospace;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+
+    color: #75839a;
+}
+
+.stat-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.gold {
+    background: #d4af37;
+}
+
+.green {
+    background: #4db6a5;
+}
+
+.purple {
+    background: #9270bd;
+}
+
+
+/* =========================================
+   CERTIFICATE GRID
+========================================= */
+
+.certificate-grid {
+    width: 100%;
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+/* =========================================
+   COMPACT CERTIFICATE CARD
+========================================= */
+
+.certificate-card {
+    min-height: 270px;
+
+    border: 1px solid #202c42;
+    border-radius: 9px;
+
+    background: rgba(15, 24, 43, 0.88);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #c39720;
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.certificate-content {
+    padding: 22px;
+}
+
+.certificate-type {
+    margin: 0 0 12px;
+
+    font-family: "Courier New", monospace;
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    color: #d4af37;
+}
+
+.certificate-content h2 {
+    margin: 0 0 8px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    font-weight: 500;
+
+    color: #f1f1f1;
+}
+
+.certificate-organization {
+    margin: 0 0 5px;
+
+    font-family: "Courier New", monospace;
+    font-size: 11px;
+
+    color: #8996aa;
+}
+
+.certificate-date {
+    margin: 0 0 15px;
+
+    font-family: "Courier New", monospace;
+    font-size: 10px;
+
+    color: #d4af37;
+}
+
+.certificate-description {
+    margin: 0 0 20px;
+
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+
+    color: #8f9caf;
+}
+
+
+/* =========================================
+   VIEW CERTIFICATE BUTTON
+========================================= */
+
+.view-certificate {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 17px;
+
+    border: 1px solid #b8860b;
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-family: "Courier New", monospace;
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: 1.3px;
+
+    color: #d4af37;
+
+    background: transparent;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.view-certificate:hover {
+    background: #d4af37;
+    color: #080d18;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 950px) {
+
+    .certificate-section {
+        padding: 105px 45px 60px;
+    }
+
+    .certificate-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .certificate-section {
+        padding: 100px 25px 50px;
+    }
+
+    .certificate-heading h1 {
+        font-size: 38px;
+    }
+
+    .certificate-stats {
+        flex-wrap: wrap;
+    }
+
+    .certificate-stat {
+        min-width: 140px;
+    }
+
+    .certificate-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

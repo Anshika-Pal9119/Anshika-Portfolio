@@ -1,0 +1,421 @@
+/* =========================================
+   EDUCATION SECTION
+========================================= */
+
+.education-section {
+    
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 120px 80px 100px;
+
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+    gap: 50px;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================================
+   LEFT SIDE
+========================================= */
+
+.education-left {
+    padding-top: 70px;
+    padding-right: 30px;
+}
+.section-number{
+    margin: 0 0 14px;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    color: #d4af37;
+}
+
+/* Small gold heading */
+
+.education-label {
+    margin: 0 0 25px;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    color: #d4af37;
+}
+
+
+/* College */
+
+.education-left h1 {
+    margin: 0 0 25px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 42px;
+    font-weight: 500;
+
+    line-height: 1.15;
+
+    color: #f5f5f5;
+}
+
+
+/* Location */
+
+.education-location {
+    margin: 0 0 25px;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 13px;
+
+    color: #778399;
+
+    letter-spacing: 1px;
+}
+
+
+/* Academic year */
+
+.education-year {
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    border: 1px solid rgba(0, 190, 190, 0.55);
+
+    border-radius: 30px;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 13px;
+
+    color: #00bcbc;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   CURRENT STATUS CARD
+========================================= */
+
+.current-status {
+    margin-top: 30px;
+
+    padding: 30px 25px;
+
+    width: 100%;
+    max-width: 450px;
+
+    background: rgba(15, 23, 42, 0.65);
+
+    border: 1px solid rgba(100, 115, 140, 0.2);
+
+    border-radius: 10px;
+
+    backdrop-filter: blur(10px);
+}
+
+
+.status-label {
+    margin: 0 0 15px;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    color: #66758d;
+}
+
+
+.current-status h2 {
+    margin: 0 0 8px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 30px;
+
+    font-weight: 500;
+
+    color: #f5f5f5;
+}
+
+
+.status-cgpa {
+    margin: 0;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 12px;
+
+    color: #697891;
+}
+
+
+/* =========================================
+   KEY COURSES
+========================================= */
+
+.key-courses {
+    margin-top: 35px;
+}
+
+
+.courses-label {
+    margin: 0 0 15px;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    color: #f0d84c;
+}
+
+
+.course-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+
+.course-tags span {
+    padding: 8px 14px;
+
+    border: 1px solid rgba(80, 100, 130, 0.35);
+
+    border-radius: 8px;
+
+    background: rgba(15, 23, 42, 0.35);
+
+    font-family: "Courier New", monospace;
+
+    font-size: 11px;
+
+    color: #8996aa;
+
+    transition: all 0.3s ease;
+}
+
+
+.course-tags span:hover {
+    border-color: #d4af37;
+
+    color: #d4af37;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   RIGHT SIDE / TIMELINE
+========================================= */
+
+.education-right {
+    padding-top: 70px;
+
+    position: relative;
+}
+
+
+.timeline-heading {
+    margin: 0 0 25px;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    color: #e6ec41;
+}
+
+
+/* Timeline container */
+
+.timeline {
+    position: relative;
+
+    padding-left: 32px;
+}
+
+
+/* Vertical line */
+
+.timeline::before {
+    content: "";
+
+    position: absolute;
+
+    left: 7px;
+
+    top: 8px;
+    bottom: 10px;
+
+    width: 1px;
+
+    background: rgba(110, 125, 150, 0.25);
+}
+
+
+/* =========================================
+   TIMELINE ITEM
+========================================= */
+
+.timeline-item {
+    position: relative;
+
+    margin-bottom: 30px;
+}
+
+
+/* Gold circle */
+
+.timeline-dot {
+    position: absolute;
+
+    left: -32px;
+
+    top: 10px;
+
+    width: 11px;
+    height: 11px;
+
+    border: 2px solid #d4af37;
+
+    border-radius: 50%;
+
+    background: #0b1222;
+
+    z-index: 2;
+}
+
+
+/* =========================================
+   TIMELINE CARD
+========================================= */
+
+.timeline-card {
+    padding: 25px;
+
+    min-height: 140px;
+
+    background: rgba(15, 23, 42, 0.65);
+
+    border: 1px solid rgba(100, 115, 140, 0.2);
+
+    border-radius: 10px;
+
+    backdrop-filter: blur(10px);
+
+    transition: all 0.3s ease;
+}
+
+
+.timeline-card:hover {
+    transform: translateX(6px);
+
+    border-color: rgba(212, 175, 55, 0.5);
+
+    background: rgba(18, 27, 47, 0.85);
+}
+
+
+/* Gold category */
+
+.timeline-category {
+    margin: 0 0 10px;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    color: #d4af37;
+}
+
+
+/* Timeline title */
+
+.timeline-card h2 {
+    margin: 0 0 7px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 22px;
+
+    font-weight: 500;
+
+    color: #eeeeee;
+}
+
+
+/* Institute */
+
+.timeline-card h3 {
+    margin: 0 0 15px;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 12px;
+
+    font-weight: 400;
+
+    color: #68778e;
+}
+
+
+/* Bottom information */
+
+.timeline-info {
+    display: flex;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+
+.timeline-info span {
+    padding: 5px 12px;
+
+    border: 1px solid rgba(80, 100, 130, 0.3);
+
+    border-radius: 7px;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 10px;
+
+    color: #697991;
+}
+
+
+.timeline-info .timeline-status {
+    color: #d4af37;
+
+    border-color: rgba(212, 175, 55, 0.3);
+}
+

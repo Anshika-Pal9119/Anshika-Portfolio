@@ -1,0 +1,539 @@
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero {
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 110px 80px 60px;
+
+    gap: 30px;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+.hero-content {
+    width: 58%;
+    max-width: 650px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* =========================================
+   AVAILABLE FOR OPPORTUNITIES
+========================================= */
+
+.availability {
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 7px 14px;
+
+    margin-bottom: 28px;
+
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    border-radius: 20px;
+
+    background: rgba(10, 15, 25, 0.55);
+
+    color: #d4af37;
+
+    font-family: "Courier New", monospace;
+    font-size: 11px;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* Green status dot */
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #31d5c8;
+
+    box-shadow: 0 0 8px #31d5c8;
+}
+
+
+/* =========================================
+   HERO NAME
+========================================= */
+
+.hero-name {
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(65px, 7vw, 95px);
+
+    font-weight: 400;
+
+    line-height: 0.95;
+}
+
+
+/* Anshika */
+
+.name-white {
+    color: #f2f3f5;
+}
+
+
+/* Pal */
+
+.name-gold {
+    margin-top: 8px;
+    font-style: italic;
+
+    background: linear-gradient(
+        110deg,
+        #a87908,
+        #d4af37,
+        #f5df8b,
+        #d4af37,
+        #a87908
+    );
+
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================================
+   ANIMATED TEXT
+========================================= */
+
+.animated-text {
+    margin-top: 30px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+     color: white;
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 20px;
+
+    font-style: italic;
+
+    min-height: 32px;
+}
+
+
+/* Lightning icon */
+
+.lightning {
+    color: #d4af37;
+
+    font-size: 22px;
+
+    font-style: normal;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.hero-description {
+    max-width: 600px;
+    font-style: italic;
+
+    margin-top: 28px;
+
+    color: #f2f7ff;
+
+   
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* Highlighted text */
+
+.hero-description strong {
+    color: #e9edf3;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   HERO BUTTONS
+========================================= */
+
+.hero-buttons {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+
+.hero-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 145px;
+
+    padding: 13px 20px;
+
+    text-decoration: none;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 11px;
+
+    letter-spacing: 1.5px;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Primary button */
+
+.primary-btn {
+    background: #d4af37;
+
+    color: #080c14;
+
+    border: 1px solid #d4af37;
+
+    border-radius: 4px;
+}
+
+
+.primary-btn:hover {
+    background: #f0cf63;
+
+    transform: translateY(-3px);
+}
+
+
+/* Secondary button */
+
+.secondary-btn {
+    color: #d4af37;
+
+    border: 1px solid rgba(212, 175, 55, 0.6);
+
+    border-radius: 4px;
+
+    background: rgba(8, 12, 20, 0.4);
+}
+
+
+.secondary-btn:hover {
+    background: rgba(212, 175, 55, 0.1);
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   RIGHT IMAGE CONTAINER
+========================================= */
+
+.hero-image-container {
+    width: 35%;
+    max-width: 420px;
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: flex-end;
+    align-items: center;
+
+    margin-left: auto;
+}
+
+
+/* =========================================
+   IMAGE FRAME
+========================================= */
+
+.image-frame {
+    width: 290px;
+    height: 400px;
+
+    padding: 4px;
+
+    border: 1px solid rgba(212, 175, 55, 0.45);
+
+    background: rgba(15, 20, 30, 0.7);
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+
+/* =========================================
+   PHOTO
+========================================= */
+
+.anshika {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+}
+
+
+/* =========================================
+   FLOATING CGPA CARD
+========================================= */
+
+.cgpa-card {
+    position: absolute;
+
+    top: -45px;
+
+    right: -25px;
+
+    width: 100px;
+
+    padding: 14px 10px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    background: rgba(15, 23, 38, 0.92);
+
+    border: 1px solid rgba(100, 120, 150, 0.3);
+
+    border-radius: 5px;
+
+    backdrop-filter: blur(10px);
+
+    -webkit-backdrop-filter: blur(10px);
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+/* CGPA number */
+
+.cgpa-value {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 30px;
+
+    line-height: 1;
+
+    background: linear-gradient(
+        110deg,
+        #a87908,
+        #d4af37,
+        #f5df8b
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* CGPA label */
+
+.cgpa-label {
+    margin-top: 6px;
+
+    color: #78859a;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 8px;
+
+    letter-spacing: 1px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   IMAGE HOVER
+========================================= */
+
+.image-frame {
+    transition: transform 0.4s ease, border-color 0.4s ease;
+}
+
+
+.image-frame:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(212, 175, 55, 0.8);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .hero {
+        padding: 110px 50px 60px;
+
+        gap: 20px;
+    }
+
+    .hero-content {
+        width: 60%;
+    }
+
+    .hero-image-container {
+        width: 35%;
+    }
+
+    .image-frame {
+        width: 260px;
+        height: 350px;
+    }
+
+    .hero-name {
+        font-size: 70px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 750px) {
+
+    .hero {
+        min-height: auto;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 120px 40px 70px;
+
+        gap: 60px;
+    }
+
+    .hero-content {
+        width: 100%;
+
+        max-width: 650px;
+    }
+
+    .hero-image-container {
+        width: 100%;
+
+        justify-content: center;
+
+        margin-left: 0;
+    }
+
+    .image-frame {
+        width: 280px;
+        height: 380px;
+    }
+
+    .cgpa-card {
+        right: calc(50% - 165px);
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+
+    .hero {
+        padding: 100px 25px 60px;
+
+        gap: 50px;
+    }
+
+    .hero-name {
+        font-size: 58px;
+    }
+
+    .animated-text {
+        font-size: 21px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .hero-btn {
+        width: 100%;
+    }
+
+    .image-frame {
+        width: 250px;
+        height: 340px;
+    }
+
+    .cgpa-card {
+        width: 95px;
+
+        right: calc(50% - 150px);
+    }
+
+    .cgpa-value {
+        font-size: 27px;
+    }
+}

@@ -1,0 +1,305 @@
+/* =========================================
+   PROJECT SECTION
+========================================= */
+
+.project-section {
+    width: 100%;
+
+    padding: 90px 60px 70px;
+     background: rgba(28, 43, 73, 0.3);
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.project-heading {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0 auto 35px;
+}
+
+
+.project-label {
+    margin: 0 0 14px;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    color: #d4af37;
+}
+
+
+.project-heading h1 {
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 48px;
+    font-weight: 500;
+
+    line-height: 1.1;
+
+    color: #f1f1f1;
+}
+
+
+.project-heading h1 span {
+    font-style: italic;
+
+    background: linear-gradient(
+        110deg,
+        #a87908,
+        #d4af37,
+        #f5df8b,
+        #d4af37,
+        #a87908
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Small gold line */
+
+.project-heading::after {
+    content: "";
+
+    display: block;
+
+    width: 48px;
+    height: 1px;
+
+    margin-top: 15px;
+
+    background: #d4af37;
+}
+
+
+/* =========================================
+   PROJECT GRID
+========================================= */
+
+.project-grid {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+
+/* =========================================
+   PROJECT CARD
+========================================= */
+
+.project-card {
+    display: flex;
+
+    flex-direction: column;
+
+    background: rgba(14, 22, 39, 0.8);
+
+    border: 1px solid rgba(90, 108, 140, 0.25);
+
+    border-radius: 9px;
+
+    overflow: hidden;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    transition: all 0.3s ease;
+}
+
+
+/* Hover */
+
+.project-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(212, 175, 55, 0.5);
+
+    background: rgba(18, 27, 47, 0.9);
+}
+
+
+/* =========================================
+   PROJECT ICON AREA
+========================================= */
+
+.project-icon {
+    height: 125px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 42px;
+
+    background: rgba(25, 37, 60, 0.65);
+
+    border-bottom: 1px solid rgba(90, 108, 140, 0.18);
+}
+
+
+/* =========================================
+   PROJECT CONTENT
+========================================= */
+
+.project-content {
+    padding: 22px 25px 25px;
+}
+
+
+/* Category */
+
+.project-category {
+    margin: 0 0 12px;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    color: #00c7c7;
+}
+
+
+/* Project title */
+
+.project-card h2 {
+    margin: 0 0 12px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 25px;
+
+    font-weight: 500;
+
+    line-height: 1.2;
+
+    color: #f1f1f1;
+}
+
+
+/* Description */
+
+.project-description {
+    margin: 0 0 20px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.65;
+
+    color: #8f9caf;
+}
+
+
+/* =========================================
+   PROJECT TAGS
+========================================= */
+
+.project-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+}
+
+
+.project-tags span {
+    padding: 6px 10px;
+
+    border: 1px solid rgba(80, 100, 130, 0.3);
+
+    border-radius: 6px;
+
+    background: rgba(8, 13, 23, 0.3);
+
+    font-family: "Courier New", monospace;
+
+    font-size: 9px;
+
+    color: #748198;
+
+    transition: all 0.25s ease;
+}
+
+
+.project-tags span:hover {
+    color: #d4af37;
+
+    border-color: rgba(212, 175, 55, 0.5);
+}
+/* =========================================
+   PROJECTS - TABLET
+========================================= */
+
+@media (max-width: 850px) {
+
+    .project-section {
+        padding: 80px 40px 60px;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   PROJECTS - MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .project-section {
+        padding: 70px 25px 50px;
+    }
+
+    .project-heading {
+        width: 100%;
+    }
+
+    .project-heading h1 {
+        font-size: 38px;
+    }
+
+    .project-grid {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+    }
+
+    .project-icon {
+        height: 105px;
+    }
+
+}
